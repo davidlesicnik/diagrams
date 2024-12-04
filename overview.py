@@ -23,7 +23,7 @@ with Diagram("Overview", filename="diagrams/overview", show=False, direction="TB
             Server("firefox"),
             Caddy("caddy")
         ]
-    source >> storage
-    source >> docker
-    source >> ansible
-    docker >> containers
+    source - storage
+    source - docker
+    source - ansible
+    docker - containers
